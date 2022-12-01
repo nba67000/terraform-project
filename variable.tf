@@ -85,3 +85,28 @@ variable "operator_email" {
   description   = "valid email adress"
   type          = string
 }
+
+# asg variables
+variable "launch_template_name" {
+  default       = "dev-launch-template"
+  description   = "name of the launch template"
+  type          = string
+}
+
+variable "ec2_image_id" {
+  default       = "ami-09da452599a0df550"
+  description   = "id of the AMI"
+  type          = string
+}
+
+variable "ec2_instance_type" {
+  default       = "t2.micro"
+  description   = "ec2 instance type"
+  type          = string
+}
+
+variable "ec2_key_pair_name" {
+  default       = "WindowsPPK"
+  description   = "name of ec2 key pair"
+  type          = string
+}
